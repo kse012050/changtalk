@@ -1,0 +1,151 @@
+@media screen and (min-width : 781px) {
+    /* 페이지 컨텐츠 공통 */
+    /* 개별 페이지 컨텐츠 사이즈 */
+    [class$="Page"] [class$="Page"]{width: var(--mobileWidth); margin-left: auto; margin-right: auto; margin-bottom: 150px;}
+    /* width 1140 - 메인 페이지 , 카테고리 페이지 , 랭킹 페이지 , 마이페이지 , 마케팅 메인*/
+    :is(.homePage , .categoryPage , .rankingPage , .myPage ) [class$="Page"],
+    .marketingPage .mainPage{max-width: var(--contentSize);}
+    /* width 720 - 상세 페이지*/
+    .detailPage > section,
+    .marketingPage .detailPage {max-width: var(--contentSize01);}
+    /* width 390 - 로그인 페이지 , 마케팅 상담 페이지 */
+    :is(.signPage , .receiptPage) [class$="Page"],
+    .marketingPage .counselPage{max-width: var(--contentSize02);}
+
+    /* 페이지 컨텐츠 상단 공간 */
+    /* 로그인  , 간편 상담 페이지 */
+    :is(.signPage , .receiptPage) [class$="Page"],
+    .marketingPage .counselPage{margin-top: 100px;}
+    /* 메인 페이지 */
+    .homePage [class$="Page"]{margin-top: 70px;}
+    /* 카테고리 , 랭킹  , 마이 , 상세 , 마케팅 - 메인 페이지*/
+    :is(.categoryPage , .rankingPage , .myPage , .detailPage ) > section, 
+    .marketingPage :is(.mainPage , .detailPage){margin-top: 60px;}
+
+    /* 서브 페이지 타이틀 공통 */
+    :is(.signPage , .categoryPage , .rankingPage , .receiptPage , .marketingPage) > section h2,
+    .categoryPage .showPage .dropBox-big button{font-size: var(--title01); font-weight: 700;}
+    :is(.signPage , .receiptPage , .marketingPage) > section h2 + form{margin-top: 50px;}
+    :is(.categoryPage , .rankingPage) > section h2,
+    .marketingPage .mainPage h2{margin-bottom: 30px;}
+
+
+    /* 버튼 */
+    [class|="btn"]{line-height: 58px; font-size: 18px;}
+    [class|="btn"] + [class|="btn"]{margin-top: 16px;}
+
+
+    /* 아이템 - 기본 */
+    .itemBox.basic .itemText strong{font-size: var(--font01);}
+    .itemBox.basic .itemText div span{font-size: var(--font06);}
+
+    /* 아이템 - 랭킹 */
+    .itemBox.rank{background-color: white; border-radius: 18px; overflow: hidden; box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);}
+    .itemBox.rank .imgBox{width: 138px; height: 138px;}
+    .itemBox.rank .itemText{padding: 30px;}
+    .itemBox.rank .itemText mark{font-weight: 700; margin-bottom: 5px;}
+    .itemBox.rank .itemText strong{font-size: var(--font01); font-weight: 700; margin-bottom: 17px;}
+    .itemBox.rank .itemText span{font-size: var(--font06); font-weight: 500;}
+
+    /* 아이템 - 가격 */
+    .itemBox.price .imgBox{height: 210px; margin-bottom: 12px;}
+    .itemBox.price .itemText{font-size: 16px; line-height: 20px;}
+    .itemBox.price .itemText p{margin-bottom: 4px;}
+    .itemBox.price .itemText strong{font-weight: 700;}
+
+    /* 북마크 */
+    .itemBox .imgBox button{width: 30px; height: 30px;}
+    .itemBox.rank .imgBox button{top: 20px; width: 44px; height: 44px;}
+
+    /* 아이템 - 베스트  순위표? */
+    .bestList :is(.swiper-slide) .itemText mark{font-size: var(--font06); margin-bottom: 10px;}
+    .bestList :is(.swiper-slide) .itemText strong{font-size: var(--font01);}
+    .bestList :is(.swiper-slide) .itemText span{font-size: var(--font06);}
+
+
+    /* input */
+    .inputBox{font-size: var(--font06);}
+    .inputBox fieldset > ul > li label{line-height: 22px;}
+    .inputBox fieldset > ul > li > *:not(:last-child){margin-bottom: 14px;}
+    .inputBox fieldset > ul > li input{height: 54px;}
+    .inputBox fieldset > ul > li :is(input , textarea){padding: 20px;}
+    .inputBox input[type="submit"]{margin-top: 60px;}
+
+
+    /* 서치 박스 */
+    .searchBox input{height: 54px; padding: 20px 60px 20px 30px;}
+    .searchBox button{right: 30px;}
+
+
+    /* 탭 */
+    .tabBox li{font-size: var(--font03); height: 60px; border-width: 1.5px; border-radius: 14px;}
+
+
+    /* 카테고리 */
+    .categoryType h3{font-size: var(--title03); font-weight: 700; margin-bottom: 20px;}
+    .categoryType ul{gap: 16px 12px;}
+    .categoryType ul li a{font-size: var(--font06); padding: 14px 20px;}
+
+
+    /* 드랍박스 */
+    .dropBox-small ul li a{font-size: var(--font04);}
+
+
+    /* 레이아웃 */
+    /* 레이아웃 - 4개*/
+    @media (min-width: 1181px) {
+        .horizontal4 > li{width: calc((100% - 60px) / 4);}
+        .horizontal4 > li:not(:nth-child(4n)){margin-right: 20px;}
+        .horizontal4 > li:nth-child(n + 5){margin-top: 40px;}
+    }
+    @media (min-width: 901px) and (max-width: 1180px) {
+        .horizontal4 > li{width: calc((100% - 40px) / 3);}
+        .horizontal4 > li:not(:nth-child(3n)){margin-right: 20px;}
+        .horizontal4 > li:nth-child(n + 4){margin-top: 40px;}
+    }
+    @media (max-width: 900px) {
+        .horizontal4 > li{width: calc((100% - 20px) / 2);}
+        .horizontal4 > li:not(:nth-child(2n)){margin-right: 20px;}
+        .horizontal4 > li:nth-child(n + 3){margin-top: 40px;}
+    }
+
+
+    /* 게시판 */
+    .boardBox{font-size: var(--font06); border-top: 1px solid var(--colorDarker);}
+    .boardBox li{border-bottom: 1px solid #dedede;}
+    .boardBox li.titleArea div{height: 55px;}
+    .boardBox li > *:first-child{width: 100%; display: flex; align-items: center;}
+    .boardBox li:not(.titleArea) > *:first-child{height: 70px;}
+
+
+    /* 팝업 */
+    .popupBox-termsOfUse > div{max-width: 588px; height: 72%; padding: 40px 50px; }
+    .popupBox-termsOfUse > div strong{font-size: var(--title02); margin-bottom: 40px;}
+    .popupBox-termsOfUse > div div ol li{font-size: var(--font06);}
+    .popupBox-termsOfUse > div div ol li b{margin-bottom: 30px;}
+    .popupBox-termsOfUse > div .btnArea button{background-image: url('../images/icon-close.png'); position: absolute; right: 30px; top: 30px; width: 18px; height: 18px;}
+
+
+    /* 해더 */
+    header > div nav ul,
+    header > div :is(nav , div){display: flex; align-items: center;}
+    header > div , header > div nav ul{gap: 70px;}
+    header > div h1 a{width: 96px; height: 34px;}
+    header > div nav{flex: 1;}
+    header > div nav ul{color: black; font-weight: 700;}
+    header > div nav ul li a{line-height: 86px; font-weight: 400;}
+    header > div nav ul li a:is(.active , :hover){color: var(--colorPoint); font-weight: 700;}
+    header > div div{margin-left: auto; gap: 20px;}
+    header > div div .icon-search{width: var(--iconSize02); height: var(--iconSize02);}
+    header > div div a:not([class]){color: var(--colorGray);}
+
+    
+    /* 푸터 */
+    footer{padding: 30px 0 40px;}
+    footer div{display: flex; justify-content: space-between; align-items: center;}
+    footer div img{width: 80px;}
+    footer div ul{gap: 30px;}
+
+    .detailPage footer , .marketingPage .detailPage + footer{margin-bottom: 100px;}
+}
+

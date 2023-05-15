@@ -1,0 +1,194 @@
+@media screen and (max-width : 780px) {
+    /* 메인 페이지 */
+    .homePage .mainPage > div > div h3{font-size: var(--title03); margin-bottom: 24px;}
+
+    /* 메인 페이지 - 메인 슬라이더 */
+    .homePage .mainSwiper{height: 530px;}
+    .homePage .mainSwiper .swiper-slide div{height: 100%; display: flex; flex-direction: column; justify-content: flex-end; box-sizing: border-box;}
+    .homePage .mainSwiper .swiper-slide div strong{display: none;}
+    .homePage .mainSwiper .swiper-slide div a{height: 100%; background:var(--colorPoint) url('../images/m-mainSliderImg.png') no-repeat center / 720px; text-indent: -9999px;}
+
+    /* 메인 페이지 - 메인 슬라이더 - 오토 플레이 */
+    .homePage .mainSwiper .playArea{display: none;}
+    .homePage .mainSwiper .navigation-basic{display: none;}
+
+
+    /* 메인 페이지 - 인기 슬라이더 */
+    .popularArea .sliderArea .popularSwiper .swiper-slide{width: 98px; height: 86px;}
+    .popularArea .sliderArea .popularSwiper .swiper-slide a{font-size: 16px;}
+
+    /* 메인 페이지 - 추천 슬라이더 , 핫한 아이템 */
+    .homePage .mainPage > div .sliderArea{overflow: hidden; transform: translateX(-20px); width: calc(100% + 40px);}
+    .homePage .mainPage > div .sliderArea .swiper{padding: 0 20px;}
+    .homePage .mainPage > div .sliderArea .itemSwiper{margin-left: 0; overflow: visible;}
+    .homePage .mainPage > div .sliderArea .navigation-circle{display: none;}
+    /* 메인 페이지 - 추천 슬라이더 */
+    .homePage .mainPage .itemArea .sliderArea .itemSwiper{width: 242px;}
+    /* 메인 페이지 - 핫한 아이템 */
+    .homePage .mainPage .bastArea .sliderArea .itemSwiper{width: 272px;}
+
+    /* 메인 페이지 - 마케팅 */
+    .homePage .marketingArea div{flex-direction: column;}
+
+    
+
+    /* 로그인 페이지 */
+    .signPage > section h2 + p{font-size: var(--font04);  line-height: 22px; margin: 12px 0 30px;}
+
+    /* 로그인 페이지 - 로그인 방식 선택 */
+    .signPage > .mainPage ul li:not(:last-child){margin-bottom: 12px;}
+    .signPage > .mainPage ul li a{font-size: var(--font04); line-height: 50px; }
+    .signPage > .mainPage ul li a::before{left: 20px; width: 20px; height: 20px;}
+
+    /* 로그인 페이지 - 회원가입 */
+    .signPage > .signUpPage fieldset .agreeArea{font-size: var(--font06); line-height: 20px;}
+    .signPage > .findPage .tabBox{margin-bottom: 30px;}
+
+
+    /* 카테고리 - 메인 */
+    .categoryPage .mainPage .searchBox{margin-bottom: 20px;}
+    .categoryPage .mainPage .categoryType:not(:last-of-type){box-shadow: inset 0 -1px 0 0 #eee;}
+    .categoryPage .mainPage .categoryType ul{padding-bottom: 25px;}
+
+    /* 카테고리 - 메인 - 검색*/
+    .categoryPage .searchPage:has(.searchTotal) .searchBox{margin-bottom: 30px;}
+    .categoryPage .searchPage .searchTotal{font-size: 15px;}
+    .categoryPage .searchPage .searchFail{padding: 126px 0 120px; font-size: 15px;}
+    .categoryPage .searchPage .searchFail::before{width: 36px; height: 36px;}
+    
+    
+    /* 카테고리 - 보기 */
+    .categoryPage .showPage .totalArea{margin: 30px 0 20px;}
+    .categoryPage .showPage .categoryType{margin-top: 20px;}
+    .categoryPage .showPage .categoryType{overflow: auto;}
+    .categoryPage .showPage .categoryType ul{display: inline-flex; flex-wrap: nowrap; padding: 0 20px; white-space: nowrap;}
+    .categoryPage .showPage .categoryType ul li{flex-shrink: 0;}
+    .categoryPage .showPage .horizontal4 > li .imgBox{height: 136px;}
+
+
+    /* 랭킹 */
+    .rankingPage .mainPage .tabArea{padding: 0 20px; box-sizing: border-box; position: relative;}
+    .rankingPage .mainPage .tabArea::before{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; box-shadow: inset 0 -2px 0 0 #eee; z-index: -1;}
+    .rankingPage .mainPage .tabArea li{font-size: var(--font04); padding: 16px 0;}
+    .rankingPage .mainPage ol li{width: 100%;}
+    .rankingPage .mainPage ol li:not(:last-child){margin-bottom: 16px;}
+    .rankingPage .mainPage ol li a::before{width: 32px; height: 32px; font-size: var(--font05);}
+
+
+    /* 마케팅 - 메인 */
+    .marketingPage .mainPage ul li{background-size: 320px;}
+    .marketingPage .mainPage ul li:not(:last-child){margin-bottom: 20px;}
+    .marketingPage .mainPage ul li:nth-child(1){background-color: #f5faf3; background-image: url('../images/m-marketing-main01.png');}
+    .marketingPage .mainPage ul li:nth-child(2){background-color: #ebf5fa; background-image: url('../images/m-marketing-main02.png');}
+    .marketingPage .mainPage ul li a{height: 320px; padding: 24px;}
+    .marketingPage .mainPage ul li a mark{font-size: var(--font05);}
+    .marketingPage .mainPage ul li a p{font-size: 20px; line-height: 24px; margin-top: 10px;}
+
+
+    /* 마케팅 - 상세 페이지 */
+    .marketingPage .detailPage .videoArea{margin-bottom: 20px;}
+    .marketingPage .detailPage .fixedArea{bottom: 84px;}
+
+
+    /* 마케팅 - 창업톡 상담 */
+    .marketingPage .counselPage .inputBox fieldset > ul > li textarea{height: 278px;}
+
+
+    /* 상세 페이지 */
+    .detailPage section figure{margin-bottom: 30px;}
+    .detailPage section figure > .imgBox{height: 360px; transform: translateX(-20px); width: calc(100% + 40px); margin-bottom: 30px;}
+    .detailPage section figure figcaption h2{font-size: var(--title02); font-weight: 600; margin-bottom: 10px; position: relative;}
+    .detailPage section figure figcaption h2 mark{position: absolute; right: 0; top: 0; font-size: var(--font04);}
+    .detailPage section figure figcaption p{font-size: var(--font05);}
+    .detailPage section figure figcaption .scrollFixed-bottom {position: fixed; left: 0; bottom: 84px; width: 100%; z-index: 10;}
+    .detailPage section figure figcaption .scrollFixed-bottom > div{width: var(--mobileWidth); margin: 0 auto;}
+    .detailPage section figure figcaption .scrollFixed-bottom > div .receiptArea a{box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);}
+    .detailPage section figure figcaption .scrollFixed-bottom > div .receiptArea button{overflow: hidden; box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);}
+    .detailPage section figure figcaption .scrollFixed-bottom > div .receiptArea button::before{width: 48px; height: 48px;}
+    .detailPage section mark.support strong{padding: 7px 10px; margin-right: 20px;}
+    .detailPage section .tabBox{margin-bottom: 30px;}
+    .detailPage section > div > div > div:not(:last-child){margin-bottom: 40px;}
+    .detailPage section > div > div h3{font-size: var(--font02); font-weight: 600; margin-bottom: 20px;}
+
+    .detailPage section .scrollFixed-top.active{position: fixed; top: 0; left: 0; width: 100%; z-index: 11; padding-bottom: 20px; background-color: white;}
+    .detailPage section .scrollFixed-top.active > div{width: var(--mobileWidth); margin: 0 auto;}
+    .detailPage section .scrollFixed-top.active .backLink{transform: translateX(-20px); margin-bottom: 10px;}
+
+    /* 상세 페이지 - 브랜드 정보 */
+    .detailPage .videoArea{position: relative; width: 100%; height: auto; padding-top: 50%;}
+    .detailPage .videoArea iframe{position: absolute; width: 100%; height: 100%; top: 0; left: 0;}
+    .detailPage .detailArea div{height: 500px;}
+    .detailPage .detailArea button{width: 82px; height: 34px; font-size: var(--font06); font-weight: 400; border: 1px solid #e6e6e6; border-radius: 8px; display: block; margin: 0 auto;}
+    .detailPage section .infoArea .menuArea .swiper-slide{width: 98px;}
+    .detailPage section .infoArea .menuArea .swiper-slide:not(:last-child){margin-right: 13px;}
+    .detailPage section .infoArea .interiorArea .swiper-slide .imgBox,
+    .detailPage section .infoArea .locationArea iframe{height: 180px;}
+    .detailPage section .infoArea .locationArea iframe{margin-bottom: 12px;}
+    .detailPage section .infoArea .locationArea p{font-size: var(--font04);}
+    .detailPage section .infoArea .interiorArea .navigation-circle{display: none;}
+
+    /* 상세 페이지 - 창업개요 */ 
+    .detailPage section .counselArea div table tbody tr{font-size: var(--font04); line-height: 52px;}
+    .detailPage section .counselArea div table tbody tr > *{flex: 1;}
+    .detailPage section .counselArea div table tfoot tr th{padding: 20px;}
+    .detailPage section .counselArea div table tfoot tr th strong{font-size: var(--font02); margin-bottom: 5px;}
+
+
+    /* 간편 상담 신청 */
+    .receiptPage .mainPage fieldset > div label{font-size: var(--font04);}
+
+
+    /* my 페이지 */
+    .appLink{background: url('../images/m-appLinkBG.png') no-repeat center / cover; padding: 28px 0;}
+    .appLink > *{display: block; max-width: 195px; margin: 0 auto;}
+    .appLink mark{font-size: var(--font03); font-weight: 600; line-height: 23px; text-align: center; margin-bottom: 12px;}
+    .appLink a{ border-radius: 28px;}
+
+    /* my 페이지 - 최상단 */
+    .myPage .topArea{padding: 30px 0 40px; margin-bottom: 30px;}
+    .myPage .topArea div{display: flex; justify-content: space-between; align-items: center;}
+    .myPage .topArea div h2{font-size: var(--title01);}
+    .myPage .topArea div > a{width: 30px; height: 30px; background: url('../images/icon-set.png') no-repeat center / cover; text-indent: -9999px; margin-right: 6px; position: relative;}
+    .myPage .topArea div > a::after{content: ''; position: absolute; right: -6px; top: -2px; width: 6px; height: 6px; background-color: rgba(255, 255, 255, 0.7); border-radius: 100%;}
+
+    /* my 페이지 - 메인 */
+    .myPage .mainPage .tabBox{margin-bottom: 20px;}
+
+    /* my 페이지 - 메인 - 관심 아이템 */
+
+    /* my 페이지 - 메인 - 상담 접수 내역 */
+    .myPage :is(.noticePage , .servicePage) .boardBox li div.detailArea{min-height: 180px; padding: 3px 20px 29.5px;}
+    .myPage :is(.noticePage , .servicePage) .boardBox li div.answerArea{padding: 30px 20px;}
+
+    /* my 페이지 - 공지사항 , my 페이지 - 서비스 - 문의 내역*/
+    .myPage :is(.noticePage , .servicePage) .boardBox li button strong{font-size: var(--font05);}
+
+    /* my 페이지 - 계정정보 */
+    .myPage .accountPage .inputBox fieldset > .kakao{font-size: var(--font04);}
+    .myPage .accountPage .inputBox fieldset > .withdrawalArea{text-align: center;}
+    .myPage .accountPage .inputBox fieldset > .withdrawalArea button{text-decoration: underline;}
+
+    /* my 페이지 - 서비스 */
+    .myPage .servicePage .tabBox{margin-bottom: 20px;}
+
+    /* my 페이지 - 서비스 - 문의하기 */
+    .myPage .servicePage .inputBox fieldset > ul > li textarea{height: 278px;}
+    .myPage .servicePage .inputBox fieldset > label{display: inline-block; font-size: var(--font06); font-weight: 400; margin-top: 20px;}
+    .myPage .servicePage .inputBox fieldset div{margin-top: 13px;}
+    .myPage .servicePage .inputBox fieldset p{max-width: 190px; line-height: 15px; margin-top: 12px;}
+
+    /* my 페이지 - 서비스 - 나의 문의 내역 */
+    .myPage .servicePage .boardBox li button{display: flex; flex-wrap: wrap;}
+    .myPage .servicePage .boardBox.mobileFull li > *:first-child > *:first-child{margin-bottom: 0;}
+    .myPage .servicePage .boardBox li button strong{order: 1;}
+    .myPage .servicePage .boardBox li button span{width: 100%; margin-bottom: 10px;}
+    .myPage .servicePage .boardBox li button time{order: 1; /* border-left: 1px solid var(--colorGray); */ padding-left: 6px; margin-left: 6px; position: relative;}
+    .myPage .servicePage .boardBox li button time::before{content: ''; position: absolute; left: 0; top: 0; width: 1px; height: 100%; background-color: var(--colorGray);}
+    
+    /* my 페이지 - 셋팅 페이지 (모바일만 있음) */
+    .myPage .mobileSettingPage ul{margin-bottom: 30px;}
+    .myPage .mobileSettingPage ul li{box-shadow: inset 0 -1px 0 0 #eee;}
+    .myPage .mobileSettingPage ul li a{display: block; font-size: var(--font02); font-weight: 600; padding: 23px 20px; display: flex; justify-content: space-between; align-items: center;}
+    .myPage .mobileSettingPage ul li a::after{content: ''; width: 24px; height: 24px; background: url('../images/m-icon-arrow-right.png') no-repeat center / cover;}
+    .myPage .mobileSettingPage button.logout{font-size: var(--font04); font-weight: 600; color: var(--colorPoint);}
+}
